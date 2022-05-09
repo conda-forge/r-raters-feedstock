@@ -1,4 +1,4 @@
-{% set version = '2.0.1' %}
+{% set version = "2.0.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/raters_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/raters/raters_{{ version }}.tar.gz
-  sha256: e1ae6bcb5222e4aea192fdf395526c7961d431f444d23671b464a6b1b7e9569a
+  sha256: 80e8f4ac454969f14ef05d40dde5b4272b7b8afecde75b23f168c7bfbdb1c12a
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -36,18 +36,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=raters
   license: GPL-2.0-or-later
-  summary: The kappa statistic implemented by Fleiss is a very popular index for assessing the
-    reliability of agreement among multiple observers. It is used both in the psychological
-    and in the psychiatric field. Other fields of application are typically medicine,
-    biology and engineering. Unfortunately,the kappa statistic may behave inconsistently
-    in case of strong agreement between raters, since this index assumes lower values
-    than it would have been expected. We propose a modification kappa implemented by
-    Fleiss in case of nominal and ordinal variables. Monte Carlo simulations are used
-    both to testing statistical hypotheses and to calculating percentile bootstrap confidence
-    intervals based on proposed statistic in case of nominal and ordinal data.
+  summary: The kappa statistic implemented by Fleiss is a very popular index for assessing the reliability of agreement among multiple observers. It is used both in the psychological and in the psychiatric field. Other fields of application are typically medicine, biology and engineering. Unfortunately,the kappa statistic
+    may behave inconsistently in case of strong agreement between raters, since this index assumes lower values than it would have been expected. We propose a modification kappa implemented by Fleiss in case of nominal and ordinal variables. Monte Carlo simulations are used both to testing statistical hypotheses and to calculating
+    percentile bootstrap confidence intervals based on proposed statistic in case of nominal and ordinal data.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
