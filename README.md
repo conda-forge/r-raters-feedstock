@@ -1,11 +1,11 @@
-About r-raters
-==============
+About r-raters-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-raters-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=raters
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-raters-feedstock/blob/main/LICENSE.txt)
 
 Summary: The kappa statistic implemented by Fleiss is a very popular index for assessing the reliability of agreement among multiple observers. It is used both in the psychological and in the psychiatric field. Other fields of application are typically medicine, biology and engineering. Unfortunately,the kappa statistic may behave inconsistently in case of strong agreement between raters, since this index assumes lower values than it would have been expected. We propose a modification kappa implemented by Fleiss in case of nominal and ordinal variables. Monte Carlo simulations are used both to testing statistical hypotheses and to calculating percentile bootstrap confidence intervals based on proposed statistic in case of nominal and ordinal data.
 
