@@ -1,4 +1,4 @@
-{% set version = "2.0.2" %}
+{% set version = "2.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/raters_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/raters/raters_{{ version }}.tar.gz
-  sha256: 80e8f4ac454969f14ef05d40dde5b4272b7b8afecde75b23f168c7bfbdb1c12a
+  sha256: f4f72fbac31ecaa0753f2886dbf62de9266783eb398616e72175e4b46521135b
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
