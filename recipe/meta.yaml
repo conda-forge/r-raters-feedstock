@@ -1,4 +1,4 @@
-{% set version = "2.0.4" %}
+{% set version = "2.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/raters_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/raters/raters_{{ version }}.tar.gz
-  sha256: 5ad8b8fe38135c77437bcdb1ecee124b9fdb7c9c9c2d5c199f99d8856d1ceffa
+  sha256: 720564b4ae72f762d475417dc826788e39b59e56e46b12af673d9a8f1e795e5e
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
